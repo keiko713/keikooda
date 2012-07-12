@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+    background-image: url(../img/bg_blocks.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    color: #eee;
+    font-family: 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+.title {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1;
+    text-rendering: optimizelegibility;
+}
+
+a {
+    color: #ccc;
+}
+a:hover {
+    color: #fff;
+}
+/*-- right side --*/
+
+.about p {
+    margin-bottom: 20px;
+}
+/*-- left side --*/
+.showcase {
+    /*clear: both;*/
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    min-height: 125px;
+}
+
+@media (max-width: 767px) {
+    .showcase {
+        padding-left: 0px;
+    }
+}
+
+.showcase h3 {
+    line-height: 1;
+    margin: 0 0 9px;
+}
+
+.sc-thumb {
+    position: absolute;
+    top: 0px;
+    left: -145px;
+}
+
+.sc-thumb img {
+    width: 125px;
+    height: 125px;
+}
+
+.imgtile {
+    margin-left: 15px;
+}
+
+.tile {
+    width: 125px;
+    height: 125px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    float: left;
+}
+
+.tile img {
+    width: 125px;
+    height: 125px;
+}

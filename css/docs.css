@@ -1,79 +1,184 @@
+/*-- general --*/
 body {
-    background-color: #333;
-    background-image: url(../img/bg_blocks.png);
-    background-repeat: repeat-y;
-    background-position: right;
-    color: #eee;
-    font-family: 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+  background-color: #eee;
+  background-image: url(../img/bg_wood.png);
+  color: #222;
+  font-family: 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+  margin-bottom: 40px;
 }
-
-@media (min-width: 768px) and (max-width: 979px) {
-}
-
-.title {
-    font-size: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    line-height: 1;
-    text-rendering: optimizelegibility;
-}
-
 a {
-    color: #ccc;
+  color: #222;
 }
 a:hover {
-    color: #fff;
-}
-/*-- right side --*/
-
-.about p {
-    margin-bottom: 20px;
-}
-/*-- left side --*/
-.showcase {
-    /*clear: both;*/
-    position: relative;
-    margin-bottom: 20px;
-    margin-left: 160px;
-    min-height: 125px;
+  color: #000;
 }
 
+/*-- navbar --*/
+.navbar {
+  color: #eee;
+  min-height: 100px;
+}
+.navbar-inner {
+  background-image: none;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.navbar .title {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-rendering: optimizelegibility;
+}
+@media (max-width: 979px) {
+  .navbar {
+    min-height: 60px;
+  }
+  .navbar .title {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 767px) {
-    .showcase {
-        padding-left: 0px;
-    }
+  .navbar {
+    min-height: 40px;
+  }
+  .navbar-inner {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .navbar .title {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 480px) {
 }
 
+/*-- section --*/
+.row {
+  margin-bottom: 20px;
+}
+/*-- about --*/
+.about p {
+  margin-bottom: 20px;
+}
+/*-- showcase --*/
+.showcase {
+  margin: 10px 0 10px 0;
+  border-top: #222 dashed 1px;
+  min-height: 140px;
+  padding-top: 10px;
+}
 .showcase h3 {
-    line-height: 1;
-    margin: 0 0 9px;
+  line-height: 1;
+  margin: 0 0 9px;
 }
-
 .sc-thumb {
-    position: absolute;
-    top: 0px;
-    left: -145px;
+  float: left;
+  width: 125px;
+  padding-right: 15px;
 }
-
 .sc-thumb img {
+  width: 125px;
+  height: 125px;
+}
+.sc-description {
+  width: 790px;
+  float: right;
+}
+@media (min-width: 1200px) {
+  .sc-description {
+    width: 1030px;
+  }
+}
+@media (max-width: 979px) {
+  .sc-description {
+    width: 574px;
+  }
+}
+@media (max-width: 767px) {
+  .sc-description {
+    width: 65%;
+  }
+  .sc-thumb {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .sc-description {
+    width: auto;
+    float: none;
+  }
+  .sc-thumb {
     width: 125px;
-    height: 125px;
+    float: none;
+  }
 }
 
-.imgtile {
-    margin-left: 15px;
+/*-- footer --*/
+footer {
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #EEE;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+  bottom: 0;
 }
-
-.tile {
-    width: 125px;
-    height: 125px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    float: left;
+footer h2 {
+  float: right;
+  line-height: 40px;
+  margin-right: 10px;
 }
-
-.tile img {
-    width: 125px;
-    height: 125px;
+footer p {
+  width: 240px;
+  height: 40px;
+  float: right;
+  margin: 0 20px 0 0;
+}
+footer a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  footer h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  footer p {
+    width: 150px;
+    height: 30px;
+  }
+  footer a {
+    width: 30px;
+    height: 30px;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  footer h2 {
+    font-size: 14px;
+  }
 }

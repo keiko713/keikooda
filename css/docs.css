@@ -5,6 +5,7 @@ body {
   color: #222;
   font-family: 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
   margin-bottom: 40px;
+  font-size: 13px;
 }
 a {
   color: #222;
@@ -141,7 +142,7 @@ footer {
 footer h2 {
   float: right;
   line-height: 40px;
-  margin-right: 10px;
+  margin: 0px 10px;
 }
 footer p {
   width: 240px;

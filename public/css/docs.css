@@ -1,11 +1,10 @@
 /*-- general --*/
 body {
   background-color: #eee;
-  background-image: url(../img/bg_wood.png);
+  background-image: url(../img/purty_wood.png);
   color: #222;
-  font-family: 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+  font-family: 'Noto Sans', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
   margin-bottom: 40px;
-  font-size: 13px;
 }
 a {
   color: #222;
@@ -13,26 +12,21 @@ a {
 a:hover {
   color: #000;
 }
+img {
+  margin-bottom: 10px;
+}
 
 /*-- navbar --*/
 .navbar {
   color: #eee;
-  min-height: 100px;
-}
-.navbar-inner {
-  background-image: none;
   background-color: #222;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding-right: 0;
-  padding-left: 0;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
+  border-color: #080808;
+  min-height: 80px;
 }
 .navbar .title {
   font-size: 60px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
   line-height: 1;
   text-align: center;
@@ -52,10 +46,6 @@ a:hover {
   .navbar {
     min-height: 40px;
   }
-  .navbar-inner {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .navbar .title {
     font-size: 24px;
     margin-top: 8px;
@@ -65,66 +55,13 @@ a:hover {
 @media (max-width: 480px) {
 }
 
-/*-- section --*/
-.row {
+/*-- main --*/
+.main .row {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-/*-- about --*/
-.about p {
-  margin-bottom: 20px;
-}
-/*-- showcase --*/
-.showcase {
-  margin: 10px 0 10px 0;
-  border-top: #222 dashed 1px;
-  min-height: 140px;
-  padding-top: 10px;
-}
-.showcase h3 {
-  line-height: 1;
-  margin: 0 0 9px;
-}
-.sc-thumb {
-  float: left;
-  width: 125px;
-  padding-right: 15px;
-}
-.sc-thumb img {
-  width: 125px;
-  height: 125px;
-}
-.sc-description {
-  width: 790px;
-  float: right;
-}
-@media (min-width: 1200px) {
-  .sc-description {
-    width: 1030px;
-  }
-}
-@media (max-width: 979px) {
-  .sc-description {
-    width: 574px;
-  }
-}
-@media (max-width: 767px) {
-  .sc-description {
-    width: 65%;
-  }
-  .sc-thumb {
-    width: 30%;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .sc-description {
-    width: auto;
-    float: none;
-  }
-  .sc-thumb {
-    width: 125px;
-    float: none;
-  }
+.main h2 {
+  margin-top: 0px;
 }
 
 /*-- footer --*/
